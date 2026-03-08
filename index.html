@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ==============================================
+         SEO: Primary Meta Tags 
+         ============================================== -->
+    <!-- Title: Brand | Main Keyword | Secondary Keyword -->
+    <title>PyNum Studio | Interactive Numerical Analysis & Python Solver</title>
+    
+    <!-- Canonical URL: Prevents duplicate content issues -->
+    <link rel="canonical" href="https://shahaduddin.com/pynum/" />
+    
+    <!-- Description: Action-oriented, includes "Free", mentions languages -->
+    <meta name="description" content="Master Numerical Analysis with real-time simulations and AI tutoring. Get production-ready Python, C++, and Fortran code for Root Finding, Linear Algebra, and ODEs. The ultimate online numerical solver." />
+    
+    <!-- Keywords: Updated with high-volume search terms -->
+    <meta name="keywords" content="numerical analysis solver, bisection method calculator, newton raphson python code, runge kutta visualizer, matrix inverse online, engineering mathematics, interpolation calculator, math AI tutor, shahaduddin" />
+    
+    <meta name="author" content="Shahad Uddin" />
+    <meta name="theme-color" content="#059669" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon & Web App Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/pynum/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/pynum/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/pynum/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json" />
+
+
+    <!-- ==============================================
+         Social Media (Open Graph / Facebook)
+         ============================================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shahaduddin.com/pynum/" />
+    <meta property="og:title" content="PyNum Studio - Visualize Numerical Methods Instantly" />
+    <meta property="og:description" content="Interactive simulations for Engineering Math. Visualize Bisection, Newton-Raphson, and Matrix ops in real-time with generated code." />
+    <meta property="og:image" content="https://shahaduddin.com/pynum/pynum_social_banner.png" />
+    <meta property="og:site_name" content="Shahad Uddin Portfolio" />
+
+    <!-- ==============================================
+         Twitter Cards
+         ============================================== -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shahaduddin.com/pynum/" />
+    <meta property="twitter:title" content="PyNum Studio - Advanced Numerical Analysis Solver" />
+    <meta property="twitter:description" content="Visualize algorithms and generate Python code for numerical analysis problems instantly." />
+    <meta property="twitter:image" content="https://shahaduddin.com/pynum/pynum_social_banner.png" />
+
+    <!-- ==============================================
+         Structured Data (JSON-LD) - CRITICAL FOR RANKING
+         This tells Google this is a Software Application
+         ============================================== -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PyNum Studio",
+  "url": "https://shahaduddin.com/pynum/",
+  "description": "Interactive Numerical Analysis studio with real-time algorithm visualizations, code generation (Python/C++/Fortran), and AI tutoring.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript. Works on Chrome, Firefox, Safari, Edge.",
+  "applicationSubCategory": "Numerical Analysis Software",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Shahad Uddin",
+    "url": "https://shahaduddin.com",
+    "sameAs": [
+      "https://github.com/shahaduddin",
+      "https://linkedin.com/in/shahaduddin"
+    ]
+  },
+  "screenshot": "https://shahaduddin.com/pynum/pynum_social_banner.png",
+  "featureList": "Root Finding (Bisection, Newton-Raphson), Linear Algebra Solvers (Gaussian, LU, Matrix Inverse), Interpolation (Lagrange, Splines), Numerical Integration, ODE Solvers, Scientific Calculator, Graphing Tool, Python/C++/Fortran Code Generation, AI Math Tutor",
+  "softwareVersion": "2.3",
+  "datePublished": "2026-02-01",
+  "dateModified": "2026-02-05",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": true,
+  "keywords": "numerical analysis, root finding algorithms, linear algebra solver, interpolation calculator, python code generator, engineering mathematics, Matrix Calculator"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PyNum Studio",
+  "url": "https://shahaduddin.com/pynum/",
+  "logo": "https://shahaduddin.com/pynum/logo.png",
+  "sameAs": [
+    "https://facebook.com/PyNumStudio"
+  ],
+  "description": "Interactive Numerical Analysis software with real-time visualizations and code generation.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Shahad Uddin",
+    "url": "https://shahaduddin.com",
+    "sameAs": [
+      "https://github.com/shahaduddin",
+      "https://linkedin.com/in/shahaduddin"
+    ]
+  }
+}
+</script>
+
+    <!-- Tailwind CDN (Optional: Remove this if you build Tailwind into index.css via Vite) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- Styles -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+          body {
+        font-family: 'Inter', sans-serif;
+      }
+      pre, code {
+        font-family: 'Fira Code', monospace;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; 
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #334155;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; 
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+  </style>
+
+    <!-- Theme Logic -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme') || 'light';
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+
+    <!-- Vite Styles -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden selection:bg-emerald-100 selection:text-emerald-900 dark:selection:bg-emerald-900 dark:selection:text-emerald-100">
+    
+    <div id="root">
+      <!-- 
+        SPLASH SCREEN (Appears immediately, removed by React)
+        Styles here are inline to ensure they load instantly without waiting for external CSS 
+      -->
+      <style>
+        .app-splash {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #f8fafc; /* slate-50 */
+          z-index: 9999;
+          transition: opacity 0.3s ease-out;
+        }
+        /* Dark Mode support for splash */
+        .dark .app-splash {
+          background-color: #020617; /* slate-950 */
+        }
+        .splash-icon {
+          width: 64px;
+          height: 64px;
+          background-color: #059669; /* emerald-600 */
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.4);
+          margin-bottom: 24px;
+          animation: pulse-soft 2s infinite;
+        }
+        .splash-text {
+          font-family: 'Inter', sans-serif;
+          font-size: 20px;
+          font-weight: 900;
+          letter-spacing: -0.05em;
+          color: #0f172a; /* slate-900 */
+        }
+        .dark .splash-text {
+          color: #f8fafc; /* slate-50 */
+        }
+        .splash-accent {
+          color: #10b981; /* emerald-500 */
+        }
+        .splash-loader {
+          margin-top: 32px;
+          width: 40px;
+          height: 4px;
+          background: #e2e8f0;
+          border-radius: 2px;
+          overflow: hidden;
+        }
+        .dark .splash-loader {
+          background: #1e293b;
+        }
+        .splash-bar {
+          width: 50%;
+          height: 100%;
+          background: #059669;
+          border-radius: 2px;
+          animation: loading 1.5s infinite ease-in-out;
+          transform: translateX(-150%);
+        }
+        @keyframes pulse-soft {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+        }
+        @keyframes loading {
+          0% { transform: translateX(-150%); }
+          50% { transform: translateX(0%); }
+          100% { transform: translateX(150%); }
+        }
+      </style>
+
+      <div class="app-splash">
+        <div class="splash-icon">
+          <!-- Simple Terminal Icon SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+        </div>
+        <div class="splash-text">
+          PyNum<span class="splash-accent">Studio</span>
+        </div>
+        <div class="splash-loader">
+          <div class="splash-bar"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Vite Main Entry -->
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
