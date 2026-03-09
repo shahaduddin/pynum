@@ -41,14 +41,14 @@ Access your calculations anywhere, anytime.
 
 *(This section should list the key technologies you used. Please update them to match your actual stack! Here are likely candidates based on the features:)*
 
-*   **Frontend Framework**: [React](https://reactjs.org/) / [Next.js](https://nextjs.org/) or [Vue.js](https://vuejs.org/)
+*   **Frontend Framework**: [React](https://reactjs.org/)
 *   **Language**: [TypeScript](https://www.typescriptlang.org/)
-*   **Numerical Computing**: Custom WebAssembly (WASM) modules or [NumPy](https://numpy.org/) (if using a Python backend bridge)
+*   **Numerical Computing**: [math.js](https://mathjs.org/) – fast number crunching in TypeScript.
 *   **Visualization**: [D3.js](https://d3js.org/) or [Chart.js](https://www.chartjs.org/)
 *   **Code Generation**: Language-specific templates and transpilers
 *   **Mobile**: [Capacitor](https://capacitorjs.com/) or [React Native](https://reactnative.dev/) for the Android APK
 *   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-*   **Deployment**: [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
+*   **Deployment**: [Vercel](https://vercel.com/)
 
 ## 📦 Getting Started for Development
 
@@ -118,5 +118,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## 📧 Contact
 
-Shahad Uddin - [@your_twitter_handle](https://twitter.com/theshahaduddin) - hello@shahaduddin.com
+Shahad Uddin - [@theshahaduddin](https://twitter.com/theshahaduddin) - hello@shahaduddin.com
 Project Link: [https://github.com/shahaduddin/pynum](https://github.com/shahaduddin/pynum)
